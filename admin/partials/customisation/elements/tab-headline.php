@@ -1,0 +1,2 @@
+<?php if ( ! defined( 'ABSPATH' ) ) exit; ?>
+<li><a href="#<?php echo esc_attr($_POST['data']['data-target']); ?>"><span class="element-title"><?php echo  esc_html($_POST['data']['title']);?></span></a></li>

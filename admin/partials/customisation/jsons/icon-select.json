@@ -1,0 +1,18 @@
+{"elem":"accordeion", "title":"Choose & Personalize Category Icon", "data-order": "7", "data-cust":"icon_select",  "data-location":"right", "children":[
+    {"elem":"sub-section", "title":"Icon Collection", "children":
+        {"elem":"categs-icon-picker"}
+    },
+    {"elem":"sub-section", "title":"Icon Settings", "children":
+        {"elem":"row", "children":[
+            {"elem":"col", "children":[
+                {"elem":"input-group", "label":"Icon color", "has-hover":"1", "type":"input_color", "name":"_catdisp-icon_color"},
+                {"elem":"input-group", "label":"Icon alignment", "has-hover":"1", "type":"text-alignment", "name":"_catdisp-icon_text-align"}
+                
+            ]},       
+            {"elem":"col", "children":[
+                {"elem":"input-group", "label":"Icon font size", "has-hover":"1", "type":"input_text", "name":"_catdisp-icon_font-size"}
+            ]}
+        ]}
+    }
+]}
+

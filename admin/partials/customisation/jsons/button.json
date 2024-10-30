@@ -1,0 +1,67 @@
+{"elem":"accordeion", "title":"Personalize Category Button", "data-order": "4", "data-cust":"button",  "data-location":"left", "children":[
+    {"elem":"sub-section", "title":"Text", "children":
+        {"elem":"row", "children":[
+            {"elem":"col", "children":[
+                {"elem":"input-group", "label":"Button Text", "type":"input_text", "name":"_btn_text"},
+                {"elem":"input-group", "label":"Button Text Size", "type":"input_text", "has-hover":"1", "name":"_btn_font-size"},
+                {"elem":"google-fonts", "label":"Button Font", "type":"select", "name":"_btn_font-family", "values":{"initial":"Use theme default"}},
+                {"elem":"input-group", "label":"Text color", "type":"input_color", "name":"_btn_color", "has-hover":"1"}
+            ]},       
+            {"elem":"col", "children":[
+                {"elem":"input-group", "label":"Button Letter Spacing", "type":"input_text", "name":"_btn_letter-spacing"},
+                {"elem":"input-group", "label":"Button Font Weight", "type":"select", "name":"_btn_font-weight","has-hover":"1", "values": {"normal":"Regular", "bold": "Bold ", "lighter":"Lighter", "bolder":"Bolder"}},
+                {"elem":"input-group", "label":"Text Font Style", "type":"font-style","target":"_btn_", "has-hover":"1"}
+            ]}
+        ]}
+    },
+
+    {"elem":"sub-section", "title":"Element", "children":
+        {"elem":"row", "children":[
+            {"elem":"col", "children":[
+                {"elem":"input-group", "label":"Button Background", "type":"input_color", "name":"_btn_background-color"},
+                {"elem":"input-group", "label":"Show Button Icon", "type":"input_toggl", "name":"_btn_use-icon","values":"1", "has_slider":"1","slide_down":"_btn_icon_group"}
+            ]},       
+            
+            {"elem":"col", "children":[
+                {"elem":"div","class" :"_btn_icon_group d-none","children":[
+                    {"elem":"input-group", "label":"", "type":"icon_picker", "name":"_btn_icon"},
+                    {"elem":"input-group", "label":"Show Icon on Hover", "type":"input_toggl", "name":"_btn_showhov-icon","values":"1"},
+                    {"elem":"input-group", "label":"Button Icon Placement", "type":"select", "name":"_btn_icon-align", "values": {"left":"Left", "right": "Right"}}
+                ]}
+                
+            ]}
+        ]}
+    },
+
+    {"elem":"sub-section", "title":"Spacing", "children":[
+        {"elem":"tabs", "children":[
+            {"elem":"ul", "class":"mt-0", "children":[
+                {"elem":"tab-headline","title":"Desktop", "data-target":"_btn_tabs-desktop"},
+                {"elem":"tab-headline","title":"Tablet", "data-target":"_btn_tabs-tablet"},
+                {"elem":"tab-headline","title":"Mobile", "data-target":"_btn_tabs-mobile"}
+            ]},
+            {"elem":"tab-content","id":"_btn_tabs-desktop","children":
+                {"elem":"padding-and-margin", "target":"_btn_", "target_tab":""}
+            },
+            {"elem":"tab-content","id":"_btn_tabs-tablet","children":
+                {"elem":"padding-and-margin", "target":"_btn_", "target_tab":"responsive_tablet_" }
+            },
+            {"elem":"tab-content","id":"_btn_tabs-mobile","children":
+                {"elem":"padding-and-margin", "target":"_btn_", "target_tab":"responsive_mobile_" }
+            }
+        ]}
+    ]},
+
+    {"elem":"sub-section", "title":"Border", "children":
+        {"elem":"border-settings","target":"_btn_"}
+    },
+
+    {"elem":"sub-section", "title":"Visibility", "children":
+        {"elem":"responsive-settings", "target":"_btn_"}
+    },
+
+    {"elem":"sub-section", "title":"Shadows", "children":
+        {"elem":"box-shadows-settings", "target":"_btn_"}
+    }
+]}
+

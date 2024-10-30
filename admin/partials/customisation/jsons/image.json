@@ -1,0 +1,50 @@
+{"elem":"accordeion", "title":"Personalize Category Image", "data-order": "3", "data-cust":"image",  "data-location":"left", "children":[
+    {"elem":"sub-section", "title":"Alignment", "children":
+        {"elem":"row", "children":[
+            {"elem":"col", "children":[
+                {"elem":"input-group", "label":"", "type":"image-align", "name":"_catdisp-img_img-alignment"}
+            ]}
+        ]}
+    },
+    {"elem":"sub-section", "title":"Sizing", "children":
+        {"elem":"row", "children":[
+           
+            {"elem":"col", "children":[
+                {"elem":"input-group", "label":"Width", "type":"input_text", "name":"_catdisp-img_width"},
+                {"elem":"input-group", "label":"Max Width", "type":"input_text", "name":"_catdisp-img_max-width"},
+                {"elem":"input-group", "label":"Height", "type":"input_text", "name":"_catdisp-img_height"},
+                {"elem":"input-group", "label":"Max Height", "type":"input_text", "name":"_catdisp-img_max-height"}
+
+            ]}
+        ]}
+    },
+
+    {"elem":"sub-section", "title":"Spacing", "children":[
+        {"elem":"tabs", "children":[
+            {"elem":"ul", "class":"mt-0", "children":[
+                {"elem":"tab-headline","title":"Desktop", "data-target":"_img_tabs-desktop"},
+                {"elem":"tab-headline","title":"Tablet", "data-target":"_img_tabs-tablet"},
+                {"elem":"tab-headline","title":"Mobile", "data-target":"_img_tabs-mobile"}
+            ]},
+            {"elem":"tab-content","id":"_img_tabs-desktop","children":
+                {"elem":"padding-and-margin", "target":"_catdisp-img_", "target_tab":""}
+            },
+            {"elem":"tab-content","id":"_img_tabs-tablet","children":
+                {"elem":"padding-and-margin", "target":"_catdisp-img_", "target_tab":"responsive_tablet_"}
+            },
+            {"elem":"tab-content","id":"_img_tabs-mobile","children":
+                {"elem":"padding-and-margin", "target":"_catdisp-img_", "target_tab":"responsive_mobile_"}
+            }
+        ]}
+    ]},
+
+    {"elem":"sub-section", "title":"Border", "children":
+        {"elem":"border-settings","target":"_catdisp-img_"}
+    },
+
+    {"elem":"sub-section", "title":"Visibility", "children":
+        {"elem":"responsive-settings", "target":"_catdisp-img_"}
+    }
+
+]}
+

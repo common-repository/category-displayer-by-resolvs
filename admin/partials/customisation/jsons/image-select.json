@@ -1,0 +1,4 @@
+{"elem":"accordeion", "title":"Upload Category Image", "data-order": "6", "data-cust":"image_select",  "data-location":"right", "children":[
+    {"elem":"categs-image-upload"}
+]}
+

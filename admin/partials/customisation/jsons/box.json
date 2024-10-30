@@ -1,0 +1,68 @@
+{"elem":"accordeion", "title":"Personalize Categories Wrapper", "data-order": "2", "data-cust":"box",  "data-location":"left", "children":[
+    {"elem":"sub-section", "title":"Background", "children":
+        {"elem":"tabs", "children":[
+            {"elem":"ul", "class":"mt-0", "children":[
+                {"elem":"tab-headline","title":"Color", "data-target":"tabs-color"},
+                {"elem":"tab-headline","title":"Gradient", "data-target":"tabs-gradient"},
+                {"elem":"tab-headline","title":"Image", "data-target":"tabs-image"}
+            ]},
+            {"elem":"tab-content", "id":"tabs-color", "children":
+                {"elem":"input-group", "label":"Background Color", "type":"input_color", "has-hover":"1","name":"_catdisp-box_background-color", "class":"cols-auto-w"}
+            },
+            {"elem":"tab-content","id":"tabs-gradient", "children":
+                {"elem":"row","children": [
+                    {"elem":"col", "children":[
+                        {"elem":"input-group", "label":"Start Color", "type":"input_color", "has-hover":"1", "name":"_catdisp-box_background-gradient-start"},
+                        {"elem":"input-group", "label":"End Color", "type":"input_color", "has-hover":"1", "name":"_catdisp-box_background-gradient-end"}
+                    ]},
+                    {"elem":"col", "children":[
+                        {"elem":"input-group", "label":"Place Gradient Above Background Image", "has-hover":"1", "type":"input_toggl", "name":"_catdisp-box_gradient-above-img","values":"1"},
+                        {"elem":"input-group", "label":"Gradient Type", "type":"select", "has-hover":"1","name":"_catdisp-box_gradient","values": {"":"Choose one", "linear-gradient": "Linear ", "radial-gradient":"Radial", "repeating-linear-gradient":"Repeating linear"}},
+                        {"elem":"input-group", "label":"Gradient Direction", "type":"input_text", "has-hover":"1", "name":"_catdisp-box_gradient-direction"},
+                        {"elem":"input-group", "label":"Start Position", "type":"input_text","has-hover":"1", "name":"_catdisp-box_gradient-start-pos"},
+                        {"elem":"input-group", "label":"End Position", "type":"input_text", "has-hover":"1", "name":"_catdisp-box_gradient-end-pos"}
+                    ]}
+                ]}
+            },
+            {"elem":"tab-content","id":"tabs-image", "children":
+                {"elem":"row","children": [
+                    {"elem":"col", "children":[
+                        {"elem":"input-group", "label":"Background Image", "type":"single_image", "name":"_catdisp-box_background-image", "class":"cols-auto-w"}
+                    ]},
+                    {"elem":"col", "children":[
+                        {"elem":"input-group", "label":"Background Repeat", "type":"select", "has-hover":"1", "name":"_catdisp-box_background-repeat", "values":{"":"Choose one","no-repeat":"No-repeat","repeat":"Repeat","repeat-y":"Repeat-Y","repeat-x":"Repeat-X"}},
+                        {"elem":"input-group", "label":"Background Size", "type":"select", "has-hover":"1", "name":"_catdisp-box_background-size", "values":{"":"Choose one","auto":"Auto","cover":"Cover","contain":"Contain","initial":"Initial"}}
+                    ]}
+                ]}
+            }
+        ]}
+    },
+    {"elem":"sub-section", "title":"Spacing", "children":[
+        {"elem":"tabs", "children":[
+            {"elem":"ul", "class":"mt-0", "children":[
+                {"elem":"tab-headline","title":"Desktop", "data-target":"_box_tabs-desktop"},
+                {"elem":"tab-headline","title":"Tablet", "data-target":"_box_tabs-tablet"},
+                {"elem":"tab-headline","title":"Mobile", "data-target":"_box_tabs-mobile"}
+            ]},
+            {"elem":"tab-content","id":"_box_tabs-desktop","children":
+                {"elem":"padding-and-margin", "target":"_catdisp-box_", "target_tab":""}
+            },
+            {"elem":"tab-content","id":"_box_tabs-tablet","children":
+                {"elem":"padding-and-margin", "target":"_catdisp-box_", "target_tab":"responsive_tablet_"}
+            },
+            {"elem":"tab-content","id":"_box_tabs-mobile","children":
+                {"elem":"padding-and-margin", "target":"_catdisp-box_", "target_tab":"responsive_mobile_"}
+            }
+        ]}
+    ]},
+    {"elem":"sub-section", "title":"Border", "children":
+        {"elem":"border-settings","target":"_catdisp-box_"}
+    },
+    {"elem":"sub-section", "title":"Visibility", "children":
+        {"elem":"responsive-settings", "target":"_catdisp-box_"}
+    },
+    {"elem":"sub-section", "title":"Shadows", "children":
+        {"elem":"box-shadows-settings", "target":"_catdisp-box_"}
+    }
+]}
+
